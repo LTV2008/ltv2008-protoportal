@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>nClock</title>
+        <link href="" rel="icon" type="image/x-icon">
+        <link data-react-helmet="true" rel="apple-touch-icon" sizes="114x114" href=""/>
+	<style>
+        body {
+            text-align: center;
+            font-family: Trebuchet MS, Verdana, Arial, sans-serif;     
+	        background-color: #BA00FF;
+    	    color: white;
+    	    background-image:url('');
+    	    background-position: top;
+    	    background-repeat: no-repeat;
+            }
+    #tick2{
+     text-align:center;
+     font-size:95px;
+    }
+    #tick1{
+     text-align:center;
+     font-size:95px;
+    }
+    
+</style>
+</head>
+
+<body>
+<h1 style="font-size:41px;">Current Time</h1>
+<span id="tick2"></span>
+<script type="text/javascript">
+       function showTwo(){
+            if (!document.all&&!document.getElementById)
+            return
+            thelement=document.getElementById? document.getElementById("tick2"): document.all.tick2
+           var Digital=new Date()
+            var hours=Digital.getHours()
+            var minutes=Digital.getMinutes()
+            var seconds=Digital.getSeconds()
+            var dn="PM"
+            if (hours<12)
+            dn="AM"
+            if (hours>12)
+            hours=hours-12
+            if (hours==0)
+            hours=12
+            if (minutes<=9)
+            minutes="0"+minutes
+            if (seconds<=9)
+            seconds="0"+seconds
+            var ctime=hours+":"+minutes+":"+seconds+" "+dn
+            thelement.innerHTML=""+ctime+""
+            setTimeout("show2()",1000)
+        }
+        window.onload=showTwo;
+        </script>
+    </body>
+</html>
