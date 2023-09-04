@@ -15,7 +15,7 @@
         </style>
 </head>
     <body>
-                <font size=6 color="black">Hey iPhone Users,</font>
+                <font size=6 color="black">Hey Old iPhone Users,</font>
                 <br>
                 <font size=7 color="blue">Welcome</font>
                 <font size=7 color="red">To</font>
@@ -25,8 +25,11 @@
                 <font size=7 color="red">Again!</font>
                 <br><br>
 <form action="http://theoldnet.com/get" id="search-form">
-                http://<input style = "font-family: Trebuchet MS, Verdana, Arial, sans-serif;  font-size: 26px;" type="text" name="url" value="apple.com">
+                http://<input style = "font-family: Trebuchet MS, Verdana, Arial, sans-serif;  font-size: 26px;" type="text" name="url" placeholder="Enter URL" value="">
                 <select style = "font-family: Trebuchet MS, Verdana, Arial, sans-serif;  font-size: 26px;" name="year">
+                    <option>2004</option>
+                    <option>2005</option>
+                    <option>2006</option>
                     <option>2007</option>
                     <option>2008</option>
                     <option>2009</option>
@@ -34,14 +37,36 @@
                 </select>
                 <input type="hidden" value="false" name="scripts">
                 <input type="hidden" value="false" name="decode">
-                <input style = "font-size: 26px;" type="submit" value="Go">
+                <input style = "font-family: Trebuchet MS, Verdana, Arial, sans-serif;  font-size: 26px;" type="submit" value="Go">
             </form>
-
+            <br>
             <form action="http://theoldnet.com/find" id="search-form">
-                <input style = "font-family: Trebuchet MS, Verdana, Arial, sans-serif;  font-size: 26px;" type="text" placeholder="Search Archives" name="query" value="the old net">
+                <input style = "font-family: Trebuchet MS, Verdana, Arial, sans-serif;  font-size: 26px;" type="text" placeholder="Search Archives" name="query" value="">
                 <input style = "font-family: Trebuchet MS, Verdana, Arial, sans-serif;  font-size: 26px;" type="submit" value="&nbsp;Search Archives&nbsp;">
             </form>
-            
-            <h5>iPhone is a trademark of Apple Inc.</h5>
+            <br>
+            <form action="http://theoldnet.com/wikipediasearch" id="wikipedia-form">
+                <input style = "font-family: Trebuchet MS, Verdana, Arial, sans-serif;  font-size: 26px;" type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f"
+                    id="searchInput" value="">
+                <input type="hidden" name="title" value="Special:Search">
+                <input style = "font-family: Trebuchet MS, Verdana, Arial, sans-serif;  font-size: 26px;" type="submit" name="fulltext" value="Search Wikipedia" title="Search Wikipedia for this text"
+                    id="mw-searchButton" class="searchButton mw-fallbackSearchButton">
+            </form>
+            <br>
+            <form action="http://frogfind.com/" method="get">
+                <input style = "font-family: Trebuchet MS, Verdana, Arial, sans-serif;  font-size: 26px;" type="text" placeholder="Search Frog Find" name="q" value="">
+                <input style = "font-family: Trebuchet MS, Verdana, Arial, sans-serif;  font-size: 26px;" type="submit" value="Search Frog Find">
+            </form>
+            <h5>
+                The Old Net is an attempt to restore vintage web browsing on vintage computers.
+                <br>
+                It uses the <a href="https://archive.org/web/">Internet Archive: Wayback Machine</a> API and a proxy that
+                strips out any
+                <br>
+                incompatible javascript and stitches together as many links as it can.
+            <br><br>
+            The Old Net &#169; <a href="http://richardbettridge.com">Richard Bettridge</a>
+            <br><br>
+            iPhone is a trademark of Apple Inc.</h5>
     </body>
 </html>
